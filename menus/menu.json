@@ -4,12 +4,20 @@
       "id": "tools",
       "submenu": [
         {
-          "label": "PostgreSQL DDL",
-          "id": "tools.psqlddl",
+          "label": "MySQL DDL",
+          "id": "tools.mysqlddl",
           "submenu": [
-            { "label": "Generate DDL files", "id": "tools.psqlddl.generate", "command": "psqlddl:generate" },
+            {
+              "label": "Generate DDL files",
+              "id": "tools.mysqlddl.generate",
+              "command": "mysqlddl:generate"
+            },
             { "type": "separator" },
-            { "label": "Configure...", "id": "tools.psqlddl.configure", "command": "psqlddl:configure" }
+            {
+              "label": "Configure...",
+              "id": "tools.mysqlddl.configure",
+              "command": "mysqlddl:configure"
+            }
           ]
         }
       ]

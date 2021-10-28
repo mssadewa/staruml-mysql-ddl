@@ -1,24 +1,24 @@
 {
-  "id": "psqlddl",
-  "name": "Postgresql DDL",
+  "id": "mysqlddl",
+  "name": "MySQL DDL",
   "schema": {
-    "psqlddl.gen": {
-      "text": "Postgresql DDL Generation",
+    "mysqlddl.gen": {
+      "text": "MySQL DDL Generation",
       "type": "section"
     },
-    "psqlddl.gen.owner": {
+    "mysqlddl.gen.owner": {
       "text": "Owner name",
-      "description": "Postgresql objects owner name",
+      "description": "MySQL objects owner name",
       "type": "String",
       "default": "postgres"
     },
-    "psqlddl.gen.tablespace": {
+    "mysqlddl.gen.tablespace": {
       "text": "Storage tablespace name",
       "description": "Tablespace name where all data will be stored",
-      "type": "string",
-      "default": "pg_default"
+      "type": "String",
+      "default": "mysql_default"
     },
-    "psqlddl.gen.encoding": {
+    "mysqlddl.gen.encoding": {
       "text": "Storage character set",
       "description": "Character set encoding",
       "type": "dropdown",
@@ -26,13 +26,16 @@
         { "value": "BIG5", "text": "Big Five - Traditional Chinese" },
         { "value": "EUC_KR", "text": "Extended UNIX Code-KR - Korean" },
         { "value": "EUC_KR", "text": "Extended UNIX Code-KR - Korean" },
-        { "value": "EUC_TW", "text": "Extended UNIX Code-TW - Traditional Chinese, Taiwanese" },
+        {
+          "value": "EUC_TW",
+          "text": "Extended UNIX Code-TW - Traditional Chinese, Taiwanese"
+        },
         { "value": "LATIN10", "text": "ISO 8859-16, ASRO SR 14111 - Romanian" },
         { "value": "UTF8", "text": "Unicode, 8-bit" }
       ],
       "default": "UTF8"
     },
-    "psqlddl.gen.collation": {
+    "mysqlddl.gen.collation": {
       "text": "Database collation",
       "description": "Database collation",
       "type": "dropdown",
@@ -42,24 +45,24 @@
         { "value": "en_US.utf8", "text": "en_US.utf8" },
         { "value": "en_CA.utf8", "text": "en_CA.utf8" },
         { "value": "en_GB.utf8", "text": "en_GB.utf8" },
-        { "value": "en_HK.utf8", "text": "en_HK.utf8"},
+        { "value": "en_HK.utf8", "text": "en_HK.utf8" },
         { "value": "POSIX", "text": "POSIX" }
       ],
       "default": "default"
     },
-    "psqlddl.gen.foreignKeyConstraint": {
+    "mysqlddl.gen.foreignKeyConstraint": {
       "text": "Generate Foregin Key Constraints",
       "description": "Generate Foreign Key constraint when reference field is populated.",
       "type": "check",
       "default": true
     },
-    "psqlddl.gen.useTab": {
+    "mysqlddl.gen.useTab": {
       "text": "Use Tab",
       "description": "Use Tab for indentation instead of spaces.",
       "type": "check",
       "default": false
     },
-    "psqlddl.gen.indentSpaces": {
+    "mysqlddl.gen.indentSpaces": {
       "text": "Indent Spaces",
       "description": "Number of spaces for indentation.",
       "type": "number",
