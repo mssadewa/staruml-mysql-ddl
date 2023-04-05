@@ -9,13 +9,13 @@
     "mysqlddl.gen.owner": {
       "text": "Owner name",
       "description": "MySQL objects owner name",
-      "type": "String",
-      "default": "postgres"
+      "type": "string",
+      "default": "mysql"
     },
     "mysqlddl.gen.tablespace": {
       "text": "Storage tablespace name",
       "description": "Tablespace name where all data will be stored",
-      "type": "String",
+      "type": "string",
       "default": "mysql_default"
     },
     "mysqlddl.gen.encoding": {
